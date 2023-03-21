@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: #111010;
+}
+
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 45px;
+  padding: 22px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.menu-item {
+  color: #ffff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #a8a29e;
+  transition: all 0.3s;
+}
+
+/* -------- */
+
+
+/* Section1 */
+
+.text-center {
+  background-position: center;
+  background-image: url(../img/billie-eilish.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-bottom: 30px;
+  border-top: 1px solid #ffff;
+  border-bottom: 1px solid #ffff;
+}
+
+.text-center h1,
+p {
+  color: #ffff;
+}
+
+.text-center h1 {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.text-center p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------- */
+
+
+/* Section2 */
+
+#geral {
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+  margin-top: 10px;
+  color: #BBBBBB;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.line-bar {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid #BBBBBB;
+}
+
+.container {
+  display: flex;
+}
+
+.container p {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.read-more {
+  color: rgb(179, 179, 179);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.read-more:hover {
+  color: #cccccc;
+  transition: all 0.3s;
+}
+
+.img-aside {
+  height: 540px;
+  width: 374px;
+  margin-left: 15px;
+}
+
+/* -------- */
+
+
+/* Section3 */
+
+#geral1 {
+  display: flex;
+  padding: 45px;
+  margin-top: 10px;
+  color: #BBBBBB;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#geral1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.album-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.album1,
+.album2,
+.album3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 55px;
+  margin-right: 25px;
+}
+
+.album1,
+.album2,
+.album3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffff;
+}
+
+.album-container :hover {
+  color: #BBBBBB;
+}
+
+section img {
+  display: flex;
+  margin-top: 15px;
+  width: 300px;
+  height: 300px;
+}
+
+/* -------- */
+
+
+/* Section4 */
+
+.awards-list ul {
+  font-size: 20px;
+  color: #ffff;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+/* -------- */
+
+
+/* Footer */
+
+footer .copy {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #ffff
+}
+
+footer a:hover {
+  color: #a8a29e;
+  transition: all 0.2s;
+}
+
+/* -------- */
+
+
+/* Media Query - */
+
+@media screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-left: 45px;
+  }
+
+  .img-aside {
+    display: none;
+  }
+
+  .album-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #geral,
+  #geral1 {
+    padding: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+
+  .copy {
+    margin-top: 35px;
+  }
+}
+
+/* .......... */
+
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .album-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .container p {
+    text-align: justify;
+  }
+
+  .img-aside {
+    display: none;
+  }
+
+  #geral,
+  #geral1 {
+    padding: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .copy {
+    margin-top: 35px;
+  }
+}
+
+/* .......... */
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .album-container {
+    margin-left: 15px;
+  }
+
+  section img {
+    display: flex;
+    margin-top: 15px;
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* ------- */
